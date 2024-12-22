@@ -1,3 +1,6 @@
 #!/usr/bin/env node
 
-console.log('Welcome to the Brain Games!');
+//@ts-check
+import { doHello } from "../src/cli.js";
+
+doHello();
