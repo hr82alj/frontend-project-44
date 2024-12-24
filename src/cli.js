@@ -1,11 +1,11 @@
 // @ts-check
-import readlineSync from 'readline-sync';
 
-const doHello = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  return userName;
+import doHello from './hello.js';
+import runEvenGame from './even_game.js';
+import runCalcGame from './calc_game.js';
+
+export {
+  doHello,
+  runEvenGame,
+  runCalcGame,
 };
-
-export default doHello;
